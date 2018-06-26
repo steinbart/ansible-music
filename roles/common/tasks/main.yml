@@ -1,0 +1,26 @@
+---
+- name: Update system
+  become: true
+  apt:
+    upgrade: yes
+    update_cache: yes
+
+- name: Install audacity
+  become: true
+  apt: name=audacity state=present
+
+- name: Install LMMS
+  become: true
+  apt: name=lmms state=present
+
+- name: Install MuseScore
+  become: true
+  apt: name=musescore state=present
+
+- name: Install Libre Office
+  become: true
+  apt: name=libreoffice state=present
+
+- name: Install GIMP
+  become: true
+  apt: name=gimp state=present

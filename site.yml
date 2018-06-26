@@ -1,0 +1,7 @@
+---
+- name: Install essential music editing programs on Debian
+  hosts: all
+  remote_user: stgym
+  
+  roles:
+    - common
